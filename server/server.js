@@ -25,6 +25,12 @@ app.use(errorHandler);
 app.use("/api", productRoutes);
 app.use("/api/users", usersRoutes);
 
+// for deployment on heroku
+if(process.env.NODE_ENV === "production")
+{
+    app.use(express.static("client/build"));
+}
+
 
 port = process.env.PORT;
 
