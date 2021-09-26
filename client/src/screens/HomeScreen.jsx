@@ -24,7 +24,7 @@ export default function HomeScreen() {
       ) : (
         <Row>
           {products.map((product) => (
-            <Col key={product._id} md={3}>
+            <Col key={product._id} md={3} >
               <ProductScreen product={product} />
             </Col>
           ))}

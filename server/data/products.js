@@ -1,9 +1,9 @@
 const products = [
   {
-    name: "boAt Airdopes 121v2 TWS Earbuds",
+    name: "boAt Bassheads 900 Wired On Ear Headphones with Mic",
     image: "/images/headphone.jpg",
     description:
-      "boAt Airdopes 121v2 TWS Earbuds with Bluetooth V5.0, Immersive Audio, Up to 14H Total Playback, Instant Voice Assistant, Easy Access Controls with Mic and Dual Tone Ergonomic Design(Active Black) ",
+      "Its sleek, lightweight and compact design makes portability extremely convenient. Impedance : 32Ω, Sensitivity (dB) : 101db ±3db, Frequency Response : 20Hz-20KHz. Microphone : Yes",
     brand: "Boat",
     category: "Electronics",
     price: 20.99,
@@ -12,11 +12,11 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Micromax IN 1b (Purple, 32 GB)",
+    name: "Acer 21.5 Inch Full HD IPS Ultra Slim (6.6mm Thick) Monitor I Frameless Design",
     image: "/images/monitor.jpg",
     description:
-      "Say hello to the Micromax IN 1b smartphone whose powerful MediaTek Helio G35 gaming processor and a 5000 mAh battery will pave the way for effortless multitasking and usage.",
-    brand: "Micromax",
+      "Exceptional Full HD IPS 21.5 Inch Ultra Thin Display : Enjoy immaculate image quality with 1920x1080 resolution and 178 degree wide viewing angles",
+    brand: "Acer",
     category: "Electronics",
     price: 599.99,
     countInStock: 7,
@@ -24,11 +24,11 @@ const products = [
     numReviews: 8,
   },
   {
-    name: "Cannon EOS 80D DSLR Camera",
+    name: "New Apple iPhone 11 (64GB) - Black",
     image: "/images/iphone.jpg",
     description:
-      "Characterized by versatile imaging specs, the Canon EOS 80D further clarifies itself using a pair of robust focusing systems and an intuitive design",
-    brand: "Cannon",
+      "6.1-inch (15.5 cm diagonal) Liquid Retina HD LCD display",
+    brand: "Apple",
     category: "Electronics",
     price: 929.99,
     countInStock: 5,
@@ -36,23 +36,23 @@ const products = [
     numReviews: 12,
   },
   {
-    name: "Sony Playstation 4 Pro White Version",
+    name: "elegante Blue Light Blocking Blue Cut Zero Power anti-glare Round Eyeglasses",
     image: "/images/blue_lens_glasses.jpg",
     description:
-      "The ultimate home entertainment center starts with PlayStation. Whether you are into gaming, HD movies, television, music",
-    brand: "Sony",
-    category: "Electronics",
-    price: 399.99,
+      "Anti-glare Tony Stark Eyeglasses block blue lights from screen of Laptop/Mobile. Size : Free Size fit to All",
+    brand: "Royal Son unisex",
+    category: "Fashion & Care",
+    price: 19.99,
     countInStock: 11,
     rating: 5,
     numReviews: 12,
   },
   {
-    name: "Logitech G-Series Gaming Mouse",
-    image: "/images/phone.png",
+    name: "Havells Crisp Plus 750-Watt Pop-up Toaster",
+    image: "/images/toaster.jpg",
     description:
-      "Get a better handle on your games with this Logitech LIGHTSYNC gaming mouse. The six programmable buttons allow customization for a smooth playing experience",
-    brand: "Logitech",
+      "Reheat function will rewarm the slices of bread without going through the whole toasting cycle again",
+    brand: "Havells",
     category: "Electronics",
     price: 49.99,
     countInStock: 7,
@@ -60,12 +60,12 @@ const products = [
     numReviews: 10,
   },
   {
-    name: "Amazon Echo Dot 3rd Generation",
-    image: "/images/phone.png",
+    name: "Daniel Klein Tint Smartwatch Full Touch with 1.69\" IPS Color Display",
+    image: "/images/smart_watch.jpg",
     description:
-      "Meet Echo Dot - Our most popular smart speaker with a fabric design. It is our most compact smart speaker that fits perfectly into small space",
-    brand: "Amazon",
-    category: "Electronics",
+      "DA14683 Processor with Bluetooth 5.0 connectivity. Smooth and fast touch feeling; HD full touch screen.",
+    brand: "Daniel Klein",
+    category: "Gadget",
     price: 29.99,
     countInStock: 0,
     rating: 4,

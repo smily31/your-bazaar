@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Image,Navbar, Nav, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 export default function Header() {
@@ -7,6 +7,7 @@ export default function Header() {
     <>
       <Navbar bg="primary" className="navbar-dark" expand="lg">
         <Container>
+          <Image src="/icon.png" alt="logo" className="bg-light" fluid rounded></Image>
           <LinkContainer to="/">
             <Navbar.Brand>Your Bazaar</Navbar.Brand>
           </LinkContainer>

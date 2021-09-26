@@ -6,7 +6,7 @@ import Rating from "../components/Rating";
 export default function ProductScreen({ product }) {
   return (
     <>
-      <Card className="my-3 p-2 rounded">
+      <Card className="my-3 p-2 rounded " style={{ height: "600px" }}>
         <Link to={`/product/${product._id}`}>
           <Card.Img src={product.image} variant="top" />
         </Link>
