@@ -1,8 +1,19 @@
 import React from "react";
-import { Image,Navbar, Nav, Container } from "react-bootstrap";
+import { Image,Navbar, Nav, Container , NavDropdown} from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { useDispatch, useSelector } from "react-redux";
+import { logout } from "../actions/userAction";
 
 export default function Header() {
+
+  const userLogin = useSelector((state) => state.userLogin);
+  const { userInfo } = userLogin;
+  const dispatch = useDispatch();
+
+  const logoutHandler = () => {
+    dispatch(logout());
+  };
+
   return (
     <>
       <Navbar bg="primary" className="navbar-dark" expand="lg">
@@ -21,12 +32,23 @@ export default function Header() {
                   &nbsp; Cart
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/signin">
-                <Nav.Link>
-                  <i className="fas fa-user"></i>
-                  &nbsp; SignIn
-                </Nav.Link>
-              </LinkContainer>
+              {userInfo ? (
+                <NavDropdown title={userInfo.name}>
+                  <LinkContainer to="/profile">
+                    <NavDropdown.Item>Profile</NavDropdown.Item>
+                  </LinkContainer>
+                  <NavDropdown.Item onClick={logoutHandler}>
+                    Logout
+                  </NavDropdown.Item>
+                </NavDropdown>
+              ) : (
+                <LinkContainer to="/login">
+                  <Nav.Link>
+                    <i className="fas fa-user"></i>
+                    &nbsp; SingIn
+                  </Nav.Link>
+                </LinkContainer>
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>
