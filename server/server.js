@@ -17,9 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 
-app.get("/", (req,res) => {
-    res.send("welcome to backend");
-});
+// app.get("/", (req,res) => {
+//     res.send("welcome to backend");
+// });
 
 app.use(errorHandler);
 app.use("/api", productRoutes);
