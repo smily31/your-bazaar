@@ -45,7 +45,7 @@ export default function Header() {
                 <LinkContainer to="/login">
                   <Nav.Link>
                     <i className="fas fa-user"></i>
-                    &nbsp; SingIn
+                    &nbsp; SignIn
                   </Nav.Link>
                 </LinkContainer>
               )}
